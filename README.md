@@ -48,38 +48,32 @@ org 100h
 MOV AX,7892H;
 MOV BX,6923H;
 ADD AX,BX;
-MOV CX,AX;
-MOV AX,00H;
-ret
 ```
 ## Output :
-![alt text](image.png)
+![alt text](image-4.png)
  
 ## Subtraction of 8 bit numbers  ALP:
 ```
 org 100h
 MOV AL,65H;
 MOV BL,08H;
-SUB AL,BL;
-MOV CL,AL;
-MOV AL,00H;           
+SUB AL,BL;         
 ret
 ```
  
 ## Output:
-![alt text](image-1.png) 
+![alt text](image-5.png)
+
 ## Multiplication alp:
 ```
 org 100h
 MOV AL,65H;
 MOV BL,08H;
 MUL BL;
-MOV CL,AL;
-MOV AL,00H;
 ret
 ```
  ## Output:
- ![alt text](image-2.png) 
+![alt text](image-6.png)
 
 
 ## Division alp:
@@ -88,13 +82,11 @@ org 100h
 MOV AX,200H;
 MOV BX,20H;
 DIV BX;
-MOV CX,AX;
-MOV AX,00H;
 ret
 ```
 
 ## Output :
-![alt text](image-3.png)
+![alt text](image-7.png)
 
 
 ## Result :
