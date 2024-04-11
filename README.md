@@ -45,12 +45,14 @@ Running The Emulator (emu8086) Intro 8086 Microprocessor Emulator, also known as
 ## Addition  of 8 bit ALP 
 ```
 org 100h
-MOV AX,7892H;
-MOV BX,6923H;
+MOV AX,22H;
+MOV BX,12H;
 ADD AX,BX;
+ret
+
 ```
 ## Output :
-![alt text](image-4.png)
+![alt text](image-17.png)
  
 ## Subtraction of 8 bit numbers  ALP:
 ```
@@ -62,7 +64,7 @@ ret
 ```
  
 ## Output:
-![alt text](image-5.png)
+![alt text](image-18.png)
 
 ## Multiplication alp:
 ```
@@ -73,21 +75,65 @@ MUL BL;
 ret
 ```
  ## Output:
-![alt text](image-6.png)
+![alt text](image-19.png)
 
 
 ## Division alp:
 ```
 org 100h
-MOV AX,200H;
+MOV AX,80H;
 MOV BX,20H;
 DIV BX;
 ret
 ```
 
 ## Output :
-![alt text](image-7.png)
+![alt text](image-20.png)
 
+## Programs for logical operations:
+
+## AND alp:
+```
+org 100h
+MOV AL,66H;
+MOV BL,77H;
+AND AL,BL
+ret
+```
+## Output:
+![alt text](image-16.png)
+
+## OR alp:
+```
+org 100h
+MOV AL,85H;
+MOV BL,50H;
+OR AL,BL
+ret
+```
+## Output:
+![alt text](image-13.png)
+
+## Not alp:
+```
+org 100h
+mov AL,66h;
+NOT AL;
+ret
+```
+## Output:
+![alt text](image-14.png)
+
+## XOR alp:
+```
+org 100h
+mov AL,26h;
+mov BL,50h;
+XOR AL,BL;
+ret
+```
+## Output:
+![alt text](image-15.png)
 
 ## Result :
 Thus, a program is executed on ALP for the fundamental arithmetic and logical operations.
